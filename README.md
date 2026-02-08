@@ -4,7 +4,7 @@
 
 Generate full proposals, polish drafts, build budgets, create Gantt charts, search literature, and check compliance — all in one place.
 
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-green) ![License](https://img.shields.io/badge/license-MIT-blue) ![Express](https://img.shields.io/badge/Express-4.x-lightgrey)
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-green) ![License](https://img.shields.io/badge/license-Apache%202.0-blue) ![Express](https://img.shields.io/badge/Express-4.x-lightgrey)
 
 ---
 
@@ -148,4 +148,4 @@ Zero build tools. Zero framework lock-in. Just `npm start`.
 
 ## License
 
-MIT
+Apache License 2.0 — see [LICENSE](LICENSE)
