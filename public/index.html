@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BidWriter — Academic Grant Proposal Platform</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h1 class="logo">🎓 BidWriter</h1>
+      <button class="sidebar-toggle" id="sidebarToggle" title="Toggle sidebar">☰</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#/" class="nav-item active" data-route="dashboard">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">Dashboard</span>
+      </a>
+      <a href="#/new-proposal" class="nav-item" data-route="new-proposal">
+        <span class="nav-icon">📝</span>
+        <span class="nav-label">New Proposal</span>
+      </a>
+      <a href="#/polish" class="nav-item" data-route="polish">
+        <span class="nav-icon">✨</span>
+        <span class="nav-label">Polish Draft</span>
+      </a>
+      <a href="#/impact" class="nav-item" data-route="impact">
+        <span class="nav-icon">🎯</span>
+        <span class="nav-label">Impact Statement</span>
+      </a>
+      <a href="#/gantt" class="nav-item" data-route="gantt">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">Gantt Chart</span>
+      </a>
+      <a href="#/budget" class="nav-item" data-route="budget">
+        <span class="nav-icon">💰</span>
+        <span class="nav-label">Budget Calculator</span>
+      </a>
+      <a href="#/literature" class="nav-item" data-route="literature">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Literature Review</span>
+      </a>
+      <a href="#/compliance" class="nav-item" data-route="compliance">
+        <span class="nav-icon">✅</span>
+        <span class="nav-label">Compliance Check</span>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark/light theme">
+        <span class="theme-icon">🌙</span>
+        <span class="nav-label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content" id="mainContent">
+    <div id="app" class="app-container">
+      <!-- Content loaded dynamically -->
+      <div class="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="/js/app.js"></script>
+  <script src="/js/proposal.js"></script>
+  <script src="/js/polish.js"></script>
+  <script src="/js/impact.js"></script>
+  <script src="/js/gantt.js"></script>
+  <script src="/js/budget.js"></script>
+  <script src="/js/literature.js"></script>
+  <script src="/js/compliance.js"></script>
+</body>
+</html>

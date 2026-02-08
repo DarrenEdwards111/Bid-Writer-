@@ -1,0 +1,47 @@
+{
+  "id": "ukri-bbsrc",
+  "name": "BBSRC",
+  "fullName": "Biotechnology and Biological Sciences Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/bbsrc/",
+  "schemes": [
+    {
+      "name": "Responsive Mode Research Grant",
+      "maxAmount": 2000000,
+      "minAmount": 100000,
+      "maxDuration": 60,
+      "eligibility": "Researchers at eligible UK research organisations",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 8000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "New Investigator Grant",
+      "maxAmount": 500000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Within 5 years of first independent academic position",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Food Security", "Industrial Biotechnology", "Bioscience for Health", "World-class Bioscience", "Agriculture and Land Use", "Synthetic Biology"],
+  "reviewCriteria": ["Scientific excellence", "Timeliness and relevance", "Impact", "Resources and management", "Applicant track record"]
+}

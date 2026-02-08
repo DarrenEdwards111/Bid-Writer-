@@ -1,0 +1,42 @@
+{
+  "id": "british-academy",
+  "name": "British Academy",
+  "fullName": "The British Academy",
+  "parent": null,
+  "website": "https://www.thebritishacademy.ac.uk/funding/",
+  "schemes": [
+    {
+      "name": "Small Research Grant",
+      "maxAmount": 10000,
+      "minAmount": 500,
+      "maxDuration": 24,
+      "eligibility": "UK-based scholars holding a salaried teaching or research post at a UK university",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 2000, "required": true },
+        { "name": "Budget Justification", "maxWords": 500, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "No overhead or estate costs"
+    },
+    {
+      "name": "Postdoctoral Fellowship",
+      "maxAmount": 260000,
+      "minAmount": 200000,
+      "maxDuration": 36,
+      "minDuration": 36,
+      "eligibility": "Within 3 years of PhD award at time of application",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 3000, "required": true },
+        { "name": "Career Development Plan", "maxWords": 1000, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Letter of Support", "required": true, "notes": "From host institution mentor" }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    }
+  ],
+  "priorities": ["Humanities", "Social Sciences", "Languages", "Policy engagement", "International collaboration"],
+  "reviewCriteria": ["Quality and significance of research", "Feasibility", "Capability of applicant", "Value for money"]
+}

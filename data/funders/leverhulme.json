@@ -1,0 +1,65 @@
+{
+  "id": "leverhulme",
+  "name": "Leverhulme Trust",
+  "fullName": "The Leverhulme Trust",
+  "parent": null,
+  "website": "https://www.leverhulme.ac.uk/",
+  "schemes": [
+    {
+      "name": "Research Project Grant",
+      "maxAmount": 500000,
+      "minAmount": 0,
+      "maxDuration": 60,
+      "eligibility": "Researchers at UK universities and higher education institutions",
+      "sections": [
+        { "name": "Research Summary", "maxWords": 100, "required": true },
+        { "name": "Case for Support", "maxWords": 5000, "required": true, "notes": "Including aims, methodology, significance" },
+        { "name": "Justification of Resources", "maxWords": 1500, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Publication List", "maxPages": 2, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "Leverhulme does not pay overhead/indirect costs"
+    },
+    {
+      "name": "Early Career Fellowship",
+      "maxAmount": 120000,
+      "minAmount": 80000,
+      "maxDuration": 36,
+      "minDuration": 36,
+      "eligibility": "Researchers within 5 years of PhD who do not hold a permanent academic position",
+      "sections": [
+        { "name": "Research Summary", "maxWords": 100, "required": true },
+        { "name": "Research Proposal", "maxWords": 3000, "required": true },
+        { "name": "Career Development Statement", "maxWords": 1000, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Letter of Support", "required": true, "notes": "From proposed host institution" }
+      ],
+      "costModel": "custom",
+      "customRate": 100,
+      "overheadRate": 0,
+      "notes": "Provides 50% salary contribution; host institution covers remainder"
+    },
+    {
+      "name": "Major Research Fellowship",
+      "maxAmount": 180000,
+      "minAmount": 100000,
+      "maxDuration": 36,
+      "minDuration": 24,
+      "eligibility": "Established academics with permanent post at a UK institution. Replacement teaching costs.",
+      "sections": [
+        { "name": "Research Summary", "maxWords": 100, "required": true },
+        { "name": "Research Proposal", "maxWords": 5000, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Publication List", "maxPages": 3, "required": true },
+        { "name": "Letter of Support", "required": true, "notes": "From Head of Department" }
+      ],
+      "costModel": "custom",
+      "customRate": 100,
+      "overheadRate": 0
+    }
+  ],
+  "priorities": ["Curiosity-driven research", "Originality and innovation", "Cross-disciplinary research", "Humanities and social sciences", "Arts and creative practice"],
+  "reviewCriteria": ["Originality and significance", "Quality of research design", "Feasibility and planning", "Applicant track record", "Value for money"]
+}

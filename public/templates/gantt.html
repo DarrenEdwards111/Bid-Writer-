@@ -1,0 +1,29 @@
+<div class="page-header">
+  <h2>📊 Gantt Chart Builder</h2>
+  <p>Visual project timeline with work packages, milestones, and deliverables</p>
+</div>
+
+<div class="form-row" style="margin-bottom:20px">
+  <div class="form-group" style="flex:1">
+    <label>Project Duration (months)</label>
+    <input type="number" id="gantt-duration" value="36" min="6" max="60">
+  </div>
+  <div class="form-group" style="flex:2">
+    <label>Auto-generate from objectives</label>
+    <textarea id="gantt-objectives" rows="2" placeholder="Paste your project objectives to auto-generate work packages..."></textarea>
+  </div>
+  <div style="display:flex;align-items:flex-end;gap:8px;padding-bottom:4px">
+    <button class="btn btn-secondary" id="gantt-generate">🤖 Auto-Generate</button>
+  </div>
+</div>
+
+<h3>Work Packages</h3>
+<div id="gantt-wp-list"></div>
+<button class="btn btn-primary" id="gantt-add-wp">+ Add Work Package</button>
+
+<h3 style="margin-top:30px">Chart Preview</h3>
+<div id="gantt-chart" class="gantt-chart-area"></div>
+
+<div style="margin-top:20px;display:flex;gap:10px">
+  <button class="btn btn-secondary" id="gantt-export">🖨️ Export / Print</button>
+</div>

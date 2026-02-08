@@ -1,0 +1,47 @@
+{
+  "id": "ukri-nerc",
+  "name": "NERC",
+  "fullName": "Natural Environment Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/nerc/",
+  "schemes": [
+    {
+      "name": "Standard Research Grant",
+      "maxAmount": 1500000,
+      "minAmount": 50000,
+      "maxDuration": 48,
+      "eligibility": "Researchers at eligible UK research organisations",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 8000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "New Investigator Grant",
+      "maxAmount": 400000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Within 5 years of first independent academic position",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 1500, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 1500, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Climate and Climate Change", "Biodiversity", "Environmental Pollution", "Natural Hazards", "Water Resources", "Earth System Science", "Marine Science"],
+  "reviewCriteria": ["Scientific excellence", "Fit to NERC remit", "Impact", "Resources and management", "Track record"]
+}

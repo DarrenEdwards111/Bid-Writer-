@@ -1,0 +1,46 @@
+{
+  "id": "ukri-stfc",
+  "name": "STFC",
+  "fullName": "Science and Technology Facilities Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/stfc/",
+  "schemes": [
+    {
+      "name": "Consolidated Grant",
+      "maxAmount": 3000000,
+      "minAmount": 200000,
+      "maxDuration": 48,
+      "eligibility": "Research groups at eligible UK institutions working in STFC remit areas",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 10000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 3000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "New Applicant Grant",
+      "maxAmount": 400000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Researchers new to the STFC portfolio",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Particle Physics", "Astronomy and Space Science", "Nuclear Physics", "Accelerator Science", "Scientific Computing", "Large-scale Facilities"],
+  "reviewCriteria": ["Scientific merit", "Timeliness", "Methodology", "Resources and cost effectiveness", "Track record"]
+}

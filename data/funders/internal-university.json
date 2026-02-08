@@ -1,0 +1,54 @@
+{
+  "id": "internal-university",
+  "name": "Internal University",
+  "fullName": "Internal University Funding",
+  "parent": null,
+  "website": "",
+  "schemes": [
+    {
+      "name": "Pump-Priming / Seed Fund",
+      "maxAmount": 20000,
+      "minAmount": 1000,
+      "maxDuration": 12,
+      "eligibility": "Academic staff at the institution",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 2000, "required": true },
+        { "name": "Budget Justification", "maxWords": 500, "required": true },
+        { "name": "CV", "maxPages": 1, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "Typically no overhead charged on internal funding"
+    },
+    {
+      "name": "Impact Acceleration Account",
+      "maxAmount": 50000,
+      "minAmount": 5000,
+      "maxDuration": 12,
+      "eligibility": "Academic staff with existing research that has impact potential",
+      "sections": [
+        { "name": "Impact Case", "maxWords": 1500, "required": true },
+        { "name": "Activity Plan", "maxWords": 1000, "required": true },
+        { "name": "Budget Justification", "maxWords": 500, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    },
+    {
+      "name": "Early Career Researcher Fund",
+      "maxAmount": 15000,
+      "minAmount": 500,
+      "maxDuration": 12,
+      "eligibility": "Within 5 years of PhD or first academic appointment",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 1500, "required": true },
+        { "name": "Career Development Statement", "maxWords": 500, "required": true },
+        { "name": "Budget Justification", "maxWords": 300, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    }
+  ],
+  "priorities": ["Interdisciplinary Research", "Knowledge Exchange", "Impact Generation", "Early Career Development", "Pilot Studies"],
+  "reviewCriteria": ["Research quality", "Feasibility", "Potential for external funding", "Value for money"]
+}

@@ -1,0 +1,106 @@
+<div class="page-header">
+  <h2>💰 Budget Calculator</h2>
+  <p>Full economic costing with overhead rates and funder contribution</p>
+</div>
+
+<div class="form-row" style="margin-bottom:20px">
+  <div class="form-group">
+    <label>Cost Model</label>
+    <select id="budget-cost-model">
+      <option value="fEC">fEC (80%)</option>
+      <option value="full">Full Cost (100%)</option>
+      <option value="custom">Custom</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>fEC Rate (%)</label>
+    <input type="number" id="budget-fec-rate" value="80" min="0" max="100">
+  </div>
+  <div class="form-group">
+    <label>Overhead Rate (%)</label>
+    <input type="number" id="budget-overhead-rate" value="25" min="0" max="100">
+  </div>
+</div>
+
+<!-- Staff Costs -->
+<div class="budget-section">
+  <h3>👤 Staff Costs</h3>
+  <div class="budget-header-row">
+    <span style="flex:2">Role</span><span style="flex:1">Grade</span><span>FTE%</span><span>Months</span><span>Salary (£/yr)</span><span>Total</span><span></span>
+  </div>
+  <div id="budget-staff-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-staff">+ Add Staff</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-staff">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Travel -->
+<div class="budget-section">
+  <h3>✈️ Travel & Subsistence</h3>
+  <div id="budget-travel-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-travel">+ Add Trip</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-travel">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Equipment -->
+<div class="budget-section">
+  <h3>🔧 Equipment</h3>
+  <div id="budget-equipment-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-equipment">+ Add Equipment</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-equipment">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Consumables -->
+<div class="budget-section">
+  <h3>🧪 Consumables</h3>
+  <div id="budget-consumables-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-consumables">+ Add Item</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-consumables">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Other -->
+<div class="budget-section">
+  <h3>📋 Other Costs</h3>
+  <div id="budget-other-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-other">+ Add Cost</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-other">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Subcontracting -->
+<div class="budget-section">
+  <h3>🤝 Subcontracting</h3>
+  <div id="budget-subcontracting-list"></div>
+  <div class="budget-section-footer">
+    <button class="btn btn-sm btn-primary" id="budget-add-subcontracting">+ Add Partner</button>
+    <span class="budget-section-total">Total: <strong id="budget-total-subcontracting">£0.00</strong></span>
+  </div>
+</div>
+
+<!-- Totals -->
+<div class="budget-totals card">
+  <h3>Budget Summary</h3>
+  <div class="budget-total-row"><span>Direct Costs</span><strong id="budget-direct-total">£0.00</strong></div>
+  <div class="budget-total-row"><span>Indirect Costs (overheads)</span><strong id="budget-indirect-total">£0.00</strong></div>
+  <div class="budget-total-row"><span>Full Economic Cost</span><strong id="budget-fec-total">£0.00</strong></div>
+  <hr>
+  <div class="budget-total-row"><span>Funder Contribution</span><strong id="budget-funder-total" class="text-primary">£0.00</strong></div>
+  <div class="budget-total-row"><span>Institution Contribution</span><strong id="budget-institution-total">£0.00</strong></div>
+  <hr>
+  <div class="budget-total-row grand"><span>Total Request to Funder</span><strong id="budget-grand-total" class="text-primary">£0.00</strong></div>
+</div>
+
+<div style="margin-top:20px;display:flex;gap:10px">
+  <button class="btn btn-secondary" id="budget-justify">🤖 Generate Justification</button>
+  <button class="btn btn-secondary" id="budget-export">🖨️ Export Table</button>
+</div>
+
+<div id="budget-justification-text" class="card" style="margin-top:20px;display:none"></div>

@@ -1,0 +1,67 @@
+{
+  "id": "ukri-ahrc",
+  "name": "AHRC",
+  "fullName": "Arts and Humanities Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/ahrc/",
+  "schemes": [
+    {
+      "name": "Research Grant - Early Career",
+      "maxAmount": 250000,
+      "minAmount": 50000,
+      "maxDuration": 24,
+      "eligibility": "Within 5 years of PhD or first academic appointment",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Research Grant - Standard",
+      "maxAmount": 1000000,
+      "minAmount": 50000,
+      "maxDuration": 60,
+      "eligibility": "Open to established researchers at eligible UK institutions",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 8000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Fellowship - Early Career",
+      "maxAmount": 300000,
+      "minAmount": 100000,
+      "maxDuration": 36,
+      "minDuration": 12,
+      "eligibility": "Within 8 years of PhD award (allowing for career breaks)",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 5000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 1500, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 1500, "required": true },
+        { "name": "Career Development Plan", "maxWords": 2000, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Letter of Support", "required": true, "notes": "From host institution" }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Creative Industries", "Heritage", "Digital Humanities", "Languages and Linguistics", "Philosophy and Ethics", "Cultural Engagement", "Museums and Collections"],
+  "reviewCriteria": ["Research quality and significance", "Research design and methods", "Impact and engagement", "Resources and management", "Applicant capability"]
+}

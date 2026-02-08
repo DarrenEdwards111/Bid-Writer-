@@ -1,0 +1,97 @@
+<div class="page-header">
+  <h2>Impact Statement Generator</h2>
+  <p>Generate compelling impact statements for your grant application</p>
+</div>
+
+<div class="tabs" id="impactTabs">
+  <button class="tab active" data-tab="form">Impact Details</button>
+  <button class="tab" data-tab="output">Generated Statement</button>
+</div>
+
+<!-- FORM TAB -->
+<div id="impactTabForm">
+  <div class="card">
+    <div class="form-group">
+      <label class="form-label">Research Summary <span class="required">*</span></label>
+      <textarea class="form-textarea" id="impactResearch" rows="5" placeholder="Describe your research project and its key findings/aims..."></textarea>
+      <div class="form-hint">Or <a href="#" id="loadFromProposal" style="color: var(--accent);">load from a saved proposal</a></div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Target Beneficiaries</label>
+      <div class="checkbox-group">
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="industry"><span>Industry</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="public sector"><span>Public Sector</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="third sector"><span>Third Sector</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="general public"><span>General Public</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="policy makers"><span>Policy Makers</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="practitioners"><span>Practitioners</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="beneficiaries" value="international"><span>International</span></label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Type of Impact</label>
+      <div class="checkbox-group">
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="economic"><span>Economic</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="social"><span>Social</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="cultural"><span>Cultural</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="environmental"><span>Environmental</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="health"><span>Health</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="policy"><span>Policy</span></label>
+        <label class="checkbox-label"><input type="checkbox" name="impactTypes" value="technological"><span>Technological</span></label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Timeframe</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" name="timeframes" value="short-term (1-3 years)"><span>Short-term (1-3 yr)</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="timeframes" value="medium-term (3-5 years)"><span>Medium (3-5 yr)</span></label>
+          <label class="checkbox-label"><input type="checkbox" name="timeframes" value="long-term (5-10 years)"><span>Long-term (5-10 yr)</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Funder (for format)</label>
+        <select class="form-select" id="impactFunder">
+          <option value="">Loading...</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg" id="generateImpactBtn" style="width: 100%;">
+      🎯 Generate Impact Statement
+    </button>
+  </div>
+</div>
+
+<!-- OUTPUT TAB -->
+<div id="impactTabOutput" class="hidden">
+  <div class="action-bar no-print">
+    <div class="action-bar-left">
+      <span class="text-muted text-sm" id="impactOutputStatus"></span>
+    </div>
+    <div class="action-bar-right">
+      <button class="btn btn-secondary btn-sm" id="impactBackBtn">← Back</button>
+      <button class="btn btn-secondary btn-sm" id="impactCopyBtn">📋 Copy</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ai-output" id="impactOutput" style="min-height: 300px;">
+      <div class="loading-inline">
+        <div class="spinner spinner-sm"></div>
+        <span>Generating impact statement...</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Proposal Selector Modal (simple) -->
+<div id="proposalSelectorOverlay" class="hidden" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;display:flex;align-items:center;justify-content:center;">
+  <div class="card" style="max-width:500px;width:90%;max-height:60vh;overflow-y:auto;">
+    <h3 class="card-title mb-4">Load from Saved Proposal</h3>
+    <div id="proposalSelectorList"></div>
+    <button class="btn btn-secondary mt-4" onclick="document.getElementById('proposalSelectorOverlay').classList.add('hidden')">Cancel</button>
+  </div>
+</div>

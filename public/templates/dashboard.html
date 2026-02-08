@@ -1,0 +1,79 @@
+<div class="page-header">
+  <h2>Dashboard</h2>
+  <p>Your academic grant proposal workspace</p>
+</div>
+
+<!-- Stats -->
+<div class="stats-grid" id="statsGrid">
+  <div class="stat-card">
+    <div class="stat-icon blue">📄</div>
+    <div>
+      <div class="stat-value" id="statTotal">0</div>
+      <div class="stat-label">Total Proposals</div>
+    </div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-icon orange">🔄</div>
+    <div>
+      <div class="stat-value" id="statInProgress">0</div>
+      <div class="stat-label">In Progress</div>
+    </div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-icon green">✅</div>
+    <div>
+      <div class="stat-value" id="statComplete">0</div>
+      <div class="stat-label">Complete</div>
+    </div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-icon purple">📊</div>
+    <div>
+      <div class="stat-value" id="statRate">0%</div>
+      <div class="stat-label">Completion Rate</div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Actions -->
+<h3 class="mb-4" style="font-size: 1.1rem;">Quick Actions</h3>
+<div class="quick-actions">
+  <a href="#/new-proposal" class="quick-action">
+    <span class="quick-action-icon">📝</span>
+    <span class="quick-action-label">New Proposal</span>
+  </a>
+  <a href="#/polish" class="quick-action">
+    <span class="quick-action-icon">✨</span>
+    <span class="quick-action-label">Polish Draft</span>
+  </a>
+  <a href="#/impact" class="quick-action">
+    <span class="quick-action-icon">🎯</span>
+    <span class="quick-action-label">Impact Statement</span>
+  </a>
+  <a href="#/budget" class="quick-action">
+    <span class="quick-action-icon">💰</span>
+    <span class="quick-action-label">Budget Calculator</span>
+  </a>
+  <a href="#/literature" class="quick-action">
+    <span class="quick-action-icon">📚</span>
+    <span class="quick-action-label">Literature Review</span>
+  </a>
+  <a href="#/compliance" class="quick-action">
+    <span class="quick-action-icon">✅</span>
+    <span class="quick-action-label">Compliance Check</span>
+  </a>
+</div>
+
+<!-- Saved Proposals -->
+<div class="card mt-8">
+  <div class="card-header">
+    <h3 class="card-title">Saved Proposals</h3>
+    <a href="#/new-proposal" class="btn btn-primary btn-sm">+ New Proposal</a>
+  </div>
+  <div id="proposalsList">
+    <div class="loading-inline">
+      <div class="spinner spinner-sm"></div>
+      <span>Loading proposals...</span>
+    </div>
+  </div>
+</div>

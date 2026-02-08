@@ -1,0 +1,67 @@
+{
+  "id": "ukri-epsrc",
+  "name": "EPSRC",
+  "fullName": "Engineering and Physical Sciences Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/epsrc/",
+  "schemes": [
+    {
+      "name": "New Investigator Award",
+      "maxAmount": 500000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Within 5 years of first academic appointment",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true, "notes": "Gantt chart or equivalent" },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Standard Research Grant",
+      "maxAmount": 2000000,
+      "minAmount": 100000,
+      "maxDuration": 60,
+      "eligibility": "Open to established researchers at eligible UK institutions",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 8000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true, "notes": "Gantt chart or work package description" },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Letter of Support", "required": false, "notes": "From project partners if applicable" }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Programme Grant",
+      "maxAmount": 6000000,
+      "minAmount": 2000000,
+      "maxDuration": 72,
+      "eligibility": "World-leading researchers with substantial track record",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 15000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 4000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 2000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 4000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Management Plan", "maxWords": 3000, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Net Zero", "Artificial Intelligence", "Quantum Technologies", "Digital Twins", "Healthcare Technologies", "Advanced Materials", "Robotics and Autonomous Systems"],
+  "reviewCriteria": ["Novelty and timeliness", "Methodology and approach", "National importance and impact", "Resources and management", "Applicant track record"]
+}

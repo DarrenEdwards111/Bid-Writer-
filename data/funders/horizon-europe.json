@@ -1,0 +1,64 @@
+{
+  "id": "horizon-europe",
+  "name": "Horizon Europe",
+  "fullName": "Horizon Europe Framework Programme",
+  "parent": "European Commission",
+  "website": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en",
+  "schemes": [
+    {
+      "name": "ERC Starting Grant",
+      "maxAmount": 1500000,
+      "minAmount": 1000000,
+      "maxDuration": 60,
+      "minDuration": 36,
+      "eligibility": "2-7 years after PhD completion. Principal Investigator must demonstrate independence.",
+      "sections": [
+        { "name": "Extended Synopsis (Part B1)", "maxPages": 5, "required": true, "notes": "Scientific proposal including state of the art, objectives, methodology" },
+        { "name": "Scientific Proposal (Part B2)", "maxPages": 15, "required": true, "notes": "Detailed research proposal" },
+        { "name": "CV and Track Record", "maxPages": 2, "required": true },
+        { "name": "Budget Table", "required": true },
+        { "name": "Ethics Self-Assessment", "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 25,
+      "notes": "Flat rate 25% indirect costs on top of actual direct costs"
+    },
+    {
+      "name": "ERC Consolidator Grant",
+      "maxAmount": 2000000,
+      "minAmount": 1500000,
+      "maxDuration": 60,
+      "minDuration": 36,
+      "eligibility": "7-12 years after PhD completion. Must demonstrate growing independence.",
+      "sections": [
+        { "name": "Extended Synopsis (Part B1)", "maxPages": 5, "required": true },
+        { "name": "Scientific Proposal (Part B2)", "maxPages": 15, "required": true },
+        { "name": "CV and Track Record", "maxPages": 2, "required": true },
+        { "name": "Budget Table", "required": true },
+        { "name": "Ethics Self-Assessment", "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 25
+    },
+    {
+      "name": "Collaborative Research (Pillar 2)",
+      "maxAmount": 5000000,
+      "minAmount": 500000,
+      "maxDuration": 48,
+      "minDuration": 24,
+      "eligibility": "Consortium of at least 3 independent legal entities from 3 different EU/associated countries",
+      "sections": [
+        { "name": "Excellence", "maxPages": 20, "required": true, "notes": "Objectives, relation to work programme, novelty, methodology" },
+        { "name": "Impact", "maxPages": 10, "required": true },
+        { "name": "Implementation", "maxPages": 15, "required": true, "notes": "Work plan, consortium, management" },
+        { "name": "Budget Table", "required": true },
+        { "name": "Ethics Self-Assessment", "required": true },
+        { "name": "Letters of Commitment", "required": true, "notes": "From all consortium partners" }
+      ],
+      "costModel": "full",
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Green Deal", "Digital Transformation", "Health", "Civil Security", "Climate and Energy", "Food and Natural Resources", "Inclusive Society"],
+  "reviewCriteria": ["Excellence (scientific quality)", "Impact (societal and economic)", "Quality and efficiency of implementation"]
+}

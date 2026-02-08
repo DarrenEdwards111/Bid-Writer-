@@ -1,0 +1,16 @@
+{
+  "name": "bidwriter",
+  "version": "1.0.0",
+  "description": "Academic bid/grant proposal writing platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "author": "Darren Edwards",
+  "license": "MIT",
+  "private": true
+}

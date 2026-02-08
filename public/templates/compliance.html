@@ -1,0 +1,33 @@
+<div class="page-header">
+  <h2>✅ Compliance Checker</h2>
+  <p>Validate your proposal against funder requirements before submission</p>
+</div>
+
+<div class="form-row">
+  <div class="form-group">
+    <label>Funder</label>
+    <select id="compliance-funder"><option value="">Select funder...</option></select>
+  </div>
+  <div class="form-group">
+    <label>Scheme</label>
+    <select id="compliance-scheme" style="display:none"><option value="">Select scheme...</option></select>
+  </div>
+  <div class="form-group">
+    <label>Requested Amount (£)</label>
+    <input type="number" id="compliance-amount" placeholder="e.g. 250000">
+  </div>
+  <div class="form-group">
+    <label>Duration (months)</label>
+    <input type="number" id="compliance-duration" placeholder="e.g. 36">
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Proposal Text</label>
+  <textarea id="compliance-text" rows="12" placeholder="Paste your full proposal text here for compliance checking..."></textarea>
+  <small class="text-muted">The checker will verify word counts, required sections, budget limits, and duration constraints.</small>
+</div>
+
+<button class="btn btn-primary" id="compliance-check-btn" style="margin-top:10px">🔍 Run Compliance Check</button>
+
+<div id="compliance-results" style="margin-top:30px"></div>

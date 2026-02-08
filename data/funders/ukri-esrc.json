@@ -1,0 +1,64 @@
+{
+  "id": "ukri-esrc",
+  "name": "ESRC",
+  "fullName": "Economic and Social Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/esrc/",
+  "schemes": [
+    {
+      "name": "New Investigator Grant",
+      "maxAmount": 400000,
+      "minAmount": 50000,
+      "maxDuration": 30,
+      "eligibility": "Within 5 years of first academic appointment or PhD (whichever is later)",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 7500, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Standard Research Grant",
+      "maxAmount": 1500000,
+      "minAmount": 100000,
+      "maxDuration": 60,
+      "eligibility": "Open to established researchers at eligible UK institutions",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 10000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2500, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Ethics Statement", "maxWords": 1000, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "Secondary Data Analysis Initiative",
+      "maxAmount": 200000,
+      "minAmount": 30000,
+      "maxDuration": 18,
+      "eligibility": "Open to all career stages",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 5000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 1500, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Productivity and Economic Growth", "Mental Health and Wellbeing", "Technology and Society", "Inequalities", "Governance and Democracy", "Education and Skills", "Ageing Society"],
+  "reviewCriteria": ["Scientific merit and originality", "Research design and feasibility", "Impact and knowledge exchange", "Value for money", "Team capability and track record"]
+}

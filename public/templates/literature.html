@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h2>📚 Literature Review</h2>
+  <p>Search academic papers, build your reference list, and generate a review narrative</p>
+</div>
+
+<div class="form-row" style="margin-bottom:20px">
+  <div class="form-group" style="flex:3">
+    <label>Search Academic Papers</label>
+    <input type="text" id="lit-search-input" placeholder="e.g. machine learning healthcare diagnostics">
+  </div>
+  <div style="display:flex;align-items:flex-end;padding-bottom:4px">
+    <button class="btn btn-primary" id="lit-search-btn">🔍 Search</button>
+  </div>
+</div>
+
+<div class="lit-layout">
+  <div class="lit-col-results">
+    <h3>Search Results</h3>
+    <div id="lit-results">
+      <p class="text-muted">Enter keywords above and click Search to find papers via Semantic Scholar.</p>
+    </div>
+  </div>
+
+  <div class="lit-col-selected">
+    <h3>Selected Papers</h3>
+    <div id="lit-selected">
+      <p>No papers selected. Search and tick papers to include.</p>
+    </div>
+    <div style="margin-top:15px;display:flex;gap:10px">
+      <button class="btn btn-primary" id="lit-generate">🤖 Generate Review</button>
+      <button class="btn btn-secondary" id="lit-export">📋 Export References</button>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:30px">
+  <h3>Generated Literature Review</h3>
+  <div id="lit-review-output" class="card">
+    <p class="text-muted">Select papers and click "Generate Review" to create a narrative literature review.</p>
+  </div>
+</div>

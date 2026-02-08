@@ -1,0 +1,72 @@
+<div class="page-header">
+  <h2>Draft Polisher</h2>
+  <p>Improve your existing text with AI-powered editing</p>
+</div>
+
+<div class="form-row">
+  <!-- Input Panel -->
+  <div class="card" style="grid-column: span 1;">
+    <h3 class="card-title mb-4">Original Text</h3>
+    
+    <div class="form-group">
+      <label class="form-label">Polishing Mode</label>
+      <select class="form-select" id="polishMode">
+        <option value="academic">Academic Tone — make it more scholarly</option>
+        <option value="clarity">Clarity — simplify and clarify</option>
+        <option value="concise">Concise — reduce word count</option>
+        <option value="funder-aligned">Funder-Aligned — match funder language</option>
+        <option value="rewrite">Full Rewrite — comprehensive overhaul</option>
+      </select>
+    </div>
+
+    <div class="form-group hidden" id="polishFunderGroup">
+      <label class="form-label">Funder</label>
+      <select class="form-select" id="polishFunder">
+        <option value="">Loading...</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Paste your draft text</label>
+      <textarea class="form-textarea" id="polishInput" rows="16" placeholder="Paste the text you want to improve here..."></textarea>
+      <div class="form-hint">
+        Word count: <strong id="polishInputWC">0</strong>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg" id="polishBtn" style="width: 100%;">
+      ✨ Polish Text
+    </button>
+  </div>
+
+  <!-- Output Panel -->
+  <div class="card" style="grid-column: span 1;">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="card-title">Polished Text</h3>
+      <div class="flex gap-4">
+        <button class="btn btn-secondary btn-sm" id="copyPolishedBtn" disabled>📋 Copy</button>
+        <button class="btn btn-secondary btn-sm" id="acceptAllBtn" disabled>✅ Accept All</button>
+      </div>
+    </div>
+
+    <div id="polishOutput" class="ai-output" style="min-height: 300px;">
+      <div class="empty-state" style="padding: 40px 20px;">
+        <div class="empty-state-icon">✨</div>
+        <p class="text-muted">Polished text will appear here</p>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-4">
+      <div class="text-sm text-muted">
+        Word count: <strong id="polishOutputWC">0</strong>
+        <span id="polishWCDiff"></span>
+      </div>
+    </div>
+
+    <!-- Changes Summary -->
+    <div id="changesSection" class="hidden mt-4">
+      <h4 style="font-size: 0.9rem; margin-bottom: 8px;">Changes Made</h4>
+      <div id="changesList" class="text-sm" style="line-height: 1.8;"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+{
+  "id": "wellcome-trust",
+  "name": "Wellcome Trust",
+  "fullName": "Wellcome Trust",
+  "parent": null,
+  "website": "https://wellcome.org/grant-funding",
+  "schemes": [
+    {
+      "name": "Discovery Research",
+      "maxAmount": 3000000,
+      "minAmount": 50000,
+      "maxDuration": 96,
+      "eligibility": "Open to researchers at any career stage with a track record in health-related research",
+      "sections": [
+        { "name": "Research Plan", "maxWords": 5000, "required": true, "notes": "Scientific case, objectives, methodology" },
+        { "name": "Track Record", "maxPages": 3, "required": true },
+        { "name": "Budget and Justification", "required": true },
+        { "name": "Data Management and Sharing Plan", "maxWords": 1500, "required": true },
+        { "name": "Diversity and Inclusion Statement", "maxWords": 500, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "Wellcome pays full direct costs plus estate costs. No indirect overhead."
+    },
+    {
+      "name": "Career Development Award",
+      "maxAmount": 400000,
+      "minAmount": 150000,
+      "maxDuration": 96,
+      "eligibility": "Postdoctoral researchers seeking to establish independent research careers in health science",
+      "sections": [
+        { "name": "Research Plan", "maxWords": 4000, "required": true },
+        { "name": "Career Development Plan", "maxWords": 2000, "required": true },
+        { "name": "Track Record", "maxPages": 2, "required": true },
+        { "name": "Budget and Justification", "required": true },
+        { "name": "Mentoring Arrangements", "maxWords": 500, "required": true },
+        { "name": "Diversity and Inclusion Statement", "maxWords": 500, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    },
+    {
+      "name": "Collaborative Award in Science",
+      "maxAmount": 5000000,
+      "minAmount": 2000000,
+      "maxDuration": 60,
+      "eligibility": "Teams of established researchers from at least 2 institutions",
+      "sections": [
+        { "name": "Research Plan", "maxWords": 8000, "required": true },
+        { "name": "Collaboration Rationale", "maxWords": 2000, "required": true },
+        { "name": "Track Record", "maxPages": 3, "required": true, "notes": "Per applicant" },
+        { "name": "Budget and Justification", "required": true },
+        { "name": "Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Data Management and Sharing Plan", "maxWords": 1500, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    }
+  ],
+  "priorities": ["Mental Health", "Infectious Disease", "Climate and Health", "Discovery Research", "Diversity in Research"],
+  "reviewCriteria": ["Importance and relevance", "Scientific approach", "Feasibility", "Applicant capability", "Research environment"]
+}

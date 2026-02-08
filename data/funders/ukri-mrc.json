@@ -1,0 +1,48 @@
+{
+  "id": "ukri-mrc",
+  "name": "MRC",
+  "fullName": "Medical Research Council",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/mrc/",
+  "schemes": [
+    {
+      "name": "Research Grant",
+      "maxAmount": 1500000,
+      "minAmount": 100000,
+      "maxDuration": 60,
+      "eligibility": "Researchers at eligible UK research organisations",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 7500, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1500, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Ethics Statement", "maxWords": 1000, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    },
+    {
+      "name": "New Investigator Research Grant",
+      "maxAmount": 600000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Early career researchers within 5 years of first independent position",
+      "sections": [
+        { "name": "Case for Support", "maxWords": 6000, "required": true },
+        { "name": "Pathways to Impact", "maxWords": 2000, "required": true },
+        { "name": "Data Management Plan", "maxWords": 1000, "required": true },
+        { "name": "Justification of Resources", "maxWords": 2000, "required": true },
+        { "name": "Work Plan", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "fEC",
+      "fecRate": 80,
+      "overheadRate": 25
+    }
+  ],
+  "priorities": ["Infections and Immunity", "Neuroscience and Mental Health", "Population Health", "Molecular and Cellular Medicine", "Global Health", "Clinical Trials"],
+  "reviewCriteria": ["Importance and scientific potential", "Research approach", "Impact and translation", "Resources requested", "Applicant track record"]
+}

@@ -1,0 +1,138 @@
+<div class="page-header">
+  <h2 id="proposalPageTitle">New Proposal</h2>
+  <p>Generate a complete structured grant proposal</p>
+</div>
+
+<!-- Tabs: Form / Generated Output -->
+<div class="tabs" id="proposalTabs">
+  <button class="tab active" data-tab="form">Proposal Details</button>
+  <button class="tab" data-tab="output">Generated Proposal</button>
+</div>
+
+<!-- FORM TAB -->
+<div id="tabForm">
+  <form id="proposalForm" class="card">
+    <!-- Title & Research Area -->
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Project Title <span class="required">*</span></label>
+        <input type="text" class="form-input" id="pTitle" placeholder="e.g. Investigating Novel Approaches to..." required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Research Area / Discipline</label>
+        <input type="text" class="form-input" id="pResearchArea" placeholder="e.g. Computer Science, Psychology...">
+      </div>
+    </div>
+
+    <!-- Funder & Scheme -->
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Funder</label>
+        <select class="form-select" id="pFunder">
+          <option value="">Loading funders...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Grant Scheme</label>
+        <select class="form-select" id="pScheme">
+          <option value="">Select funder first...</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Amount & Duration -->
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Requested Amount (£)</label>
+        <input type="number" class="form-input" id="pAmount" placeholder="e.g. 250000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Duration (months)</label>
+        <input type="number" class="form-input" id="pDuration" placeholder="e.g. 36" min="1" max="120">
+      </div>
+    </div>
+
+    <!-- PI Info -->
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Principal Investigator</label>
+        <input type="text" class="form-input" id="pPIName" placeholder="e.g. Dr. Jane Smith">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Institution</label>
+        <input type="text" class="form-input" id="pPIInstitution" placeholder="e.g. University of Manchester">
+      </div>
+    </div>
+
+    <!-- Co-Investigators -->
+    <div class="form-group">
+      <label class="form-label">Co-Investigators</label>
+      <div id="coInvestigators" class="dynamic-list">
+        <div class="dynamic-list-item">
+          <input type="text" class="form-input ci-name" placeholder="Name">
+          <input type="text" class="form-input ci-inst" placeholder="Institution">
+          <button type="button" class="btn-remove" title="Remove">×</button>
+        </div>
+        <button type="button" class="btn-add-item" id="addCI">+ Add Co-Investigator</button>
+      </div>
+    </div>
+
+    <!-- Research Question -->
+    <div class="form-group">
+      <label class="form-label">Research Question / Hypothesis <span class="required">*</span></label>
+      <textarea class="form-textarea" id="pResearchQuestion" rows="4" placeholder="What is the central research question or hypothesis?" required></textarea>
+    </div>
+
+    <!-- Key Objectives -->
+    <div class="form-group">
+      <label class="form-label">Key Objectives</label>
+      <div id="objectives" class="dynamic-list">
+        <button type="button" class="btn-add-item">+ Add Objective</button>
+      </div>
+    </div>
+
+    <!-- Methodology -->
+    <div class="form-group">
+      <label class="form-label">Methodology Overview</label>
+      <textarea class="form-textarea" id="pMethodology" rows="4" placeholder="Briefly describe the planned methodology..."></textarea>
+    </div>
+
+    <!-- Expected Outcomes -->
+    <div class="form-group">
+      <label class="form-label">Expected Outcomes</label>
+      <textarea class="form-textarea" id="pOutcomes" rows="3" placeholder="What are the expected outputs and outcomes?"></textarea>
+    </div>
+
+    <!-- Existing Notes -->
+    <div class="form-group">
+      <label class="form-label">Existing Text / Notes to Incorporate</label>
+      <textarea class="form-textarea" id="pExistingNotes" rows="4" placeholder="Paste any existing text, notes, or ideas you want incorporated..."></textarea>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex justify-between items-center mt-4">
+      <button type="button" class="btn btn-secondary" id="saveDraftBtn">💾 Save Draft</button>
+      <div class="flex gap-4">
+        <button type="button" class="btn btn-secondary" id="clearFormBtn">Clear</button>
+        <button type="submit" class="btn btn-primary btn-lg" id="generateBtn">🤖 Generate Proposal</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- OUTPUT TAB -->
+<div id="tabOutput" class="hidden">
+  <div class="action-bar no-print">
+    <div class="action-bar-left">
+      <span class="text-muted text-sm" id="outputStatus"></span>
+    </div>
+    <div class="action-bar-right">
+      <button class="btn btn-secondary btn-sm" id="backToFormBtn">← Back to Form</button>
+      <button class="btn btn-secondary btn-sm" id="exportPdfBtn">📄 Export PDF</button>
+      <button class="btn btn-success btn-sm" id="saveProposalBtn">💾 Save Proposal</button>
+    </div>
+  </div>
+
+  <!-- Editable sections -->
+  <div id="proposalSections"></div>
+</div>
