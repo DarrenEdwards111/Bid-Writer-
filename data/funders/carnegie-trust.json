@@ -1,0 +1,58 @@
+{
+  "id": "carnegie-trust",
+  "name": "Carnegie Trust",
+  "fullName": "Carnegie Trust for the Universities of Scotland",
+  "parent": null,
+  "website": "https://www.carnegie-trust.org/",
+  "schemes": [
+    {
+      "name": "Research Incentive Grant",
+      "maxAmount": 30000,
+      "minAmount": 5000,
+      "maxDuration": 24,
+      "eligibility": "Academic staff at Scottish universities within 5 years of first academic appointment",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 2500, "required": true },
+        { "name": "Budget and Justification", "maxWords": 500, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true },
+        { "name": "Head of Department Statement", "maxWords": 300, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "No salary costs. For equipment, consumables, travel, and research expenses."
+    },
+    {
+      "name": "Collaborative Research Grant",
+      "maxAmount": 70000,
+      "minAmount": 10000,
+      "maxDuration": 36,
+      "eligibility": "Academic staff at Scottish universities collaborating with researchers at other institutions",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 4000, "required": true },
+        { "name": "Collaboration Rationale", "maxWords": 1000, "required": true },
+        { "name": "Budget and Justification", "maxWords": 1000, "required": true },
+        { "name": "CVs of all applicants", "maxPages": 2, "required": true, "notes": "Per applicant" }
+      ],
+      "costModel": "full",
+      "overheadRate": 0
+    },
+    {
+      "name": "PhD Scholarship",
+      "maxAmount": 100000,
+      "maxDuration": 42,
+      "minDuration": 36,
+      "eligibility": "Prospective PhD students at Scottish universities",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 3000, "required": true },
+        { "name": "Supervisor Statement", "maxWords": 1000, "required": true },
+        { "name": "Training Plan", "maxWords": 500, "required": true },
+        { "name": "Budget", "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "Covers fees and stipend at UKRI rates."
+    }
+  ],
+  "priorities": ["Scottish Higher Education", "Early Career Researchers", "Arts and Humanities", "Social Sciences", "Natural Sciences"],
+  "reviewCriteria": ["Research quality", "Originality", "Feasibility", "Value for money", "Benefit to Scottish universities"]
+}

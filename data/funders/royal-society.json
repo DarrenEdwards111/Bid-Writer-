@@ -1,0 +1,59 @@
+{
+  "id": "royal-society",
+  "name": "Royal Society",
+  "fullName": "The Royal Society",
+  "parent": null,
+  "website": "https://royalsociety.org/grants-schemes-awards/",
+  "schemes": [
+    {
+      "name": "University Research Fellowship",
+      "maxAmount": 750000,
+      "minAmount": 100000,
+      "maxDuration": 96,
+      "minDuration": 60,
+      "eligibility": "Outstanding early-career scientists (3-8 years post-PhD) in natural sciences, typically without a permanent academic position",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 4000, "required": true },
+        { "name": "Track Record", "maxPages": 2, "required": true },
+        { "name": "Career Plan", "maxWords": 1000, "required": true },
+        { "name": "Host Institution Statement", "maxWords": 500, "required": true },
+        { "name": "Budget Justification", "maxWords": 1000, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "Salary and research costs. 5-year initial appointment, renewable for 3 more years."
+    },
+    {
+      "name": "Research Grants",
+      "maxAmount": 20000,
+      "minAmount": 2000,
+      "maxDuration": 24,
+      "eligibility": "Scientists at UK institutions for small-scale research projects",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 2000, "required": true },
+        { "name": "Budget Justification", "maxWords": 500, "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "For equipment, consumables, and travel. No salary costs."
+    },
+    {
+      "name": "Newton International Fellowship",
+      "maxAmount": 99000,
+      "maxDuration": 24,
+      "eligibility": "Non-UK early-career researchers wishing to work at a UK institution",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 3000, "required": true },
+        { "name": "Track Record", "maxPages": 2, "required": true },
+        { "name": "Host Support Statement", "maxWords": 500, "required": true },
+        { "name": "Budget Summary", "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "£24k/year subsistence, £8k/year research expenses, plus £6k relocation."
+    }
+  ],
+  "priorities": ["Fundamental Science", "Natural Sciences", "Mathematics", "Engineering", "International Collaboration"],
+  "reviewCriteria": ["Scientific excellence", "Originality", "Feasibility", "Track record", "Potential impact on the field"]
+}

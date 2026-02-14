@@ -1,0 +1,61 @@
+{
+  "id": "nuffield-foundation",
+  "name": "Nuffield Foundation",
+  "fullName": "Nuffield Foundation",
+  "parent": null,
+  "website": "https://www.nuffieldfoundation.org/funding",
+  "schemes": [
+    {
+      "name": "Research Programme",
+      "maxAmount": 500000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "eligibility": "Academic researchers at UK universities and independent research organisations",
+      "sections": [
+        { "name": "Research Question and Rationale", "maxWords": 3000, "required": true },
+        { "name": "Literature Review", "maxWords": 2000, "required": true },
+        { "name": "Research Design and Methods", "maxWords": 3000, "required": true },
+        { "name": "Timetable and Milestones", "required": true },
+        { "name": "Team and Track Record", "maxWords": 1500, "required": true },
+        { "name": "Impact and Engagement Plan", "maxWords": 1500, "required": true },
+        { "name": "Budget and Justification", "required": true },
+        { "name": "Ethics Statement", "maxWords": 500, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 20,
+      "notes": "Nuffield Foundation pays full direct costs plus a contribution to overheads."
+    },
+    {
+      "name": "Oliver Bird Fund",
+      "maxAmount": 300000,
+      "minAmount": 30000,
+      "maxDuration": 36,
+      "eligibility": "Researchers focused on musculoskeletal conditions",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 3000, "required": true },
+        { "name": "Methods", "maxWords": 2000, "required": true },
+        { "name": "Team", "maxWords": 1000, "required": true },
+        { "name": "Budget", "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 20
+    },
+    {
+      "name": "Small Grants",
+      "maxAmount": 15000,
+      "minAmount": 5000,
+      "maxDuration": 18,
+      "eligibility": "Researchers at UK institutions for pilot studies or initial investigations",
+      "sections": [
+        { "name": "Research Proposal", "maxWords": 2000, "required": true },
+        { "name": "Budget", "required": true },
+        { "name": "CV", "maxPages": 2, "required": true }
+      ],
+      "costModel": "full",
+      "overheadRate": 0,
+      "notes": "For pilot research and scoping studies."
+    }
+  ],
+  "priorities": ["Education", "Social Policy", "Justice", "Welfare", "Evidence-Based Policy"],
+  "reviewCriteria": ["Research quality", "Relevance to foundation priorities", "Feasibility", "Track record", "Potential for policy impact", "Value for money"]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "innovate-uk",
+  "name": "Innovate UK",
+  "fullName": "Innovate UK",
+  "parent": "UKRI",
+  "website": "https://www.ukri.org/councils/innovate-uk/",
+  "schemes": [
+    {
+      "name": "Smart Grants",
+      "maxAmount": 2000000,
+      "minAmount": 25000,
+      "maxDuration": 36,
+      "eligibility": "UK-based businesses of any size. Must be collaborative or single applicant depending on competition.",
+      "sections": [
+        { "name": "Application Questions", "maxWords": 10000, "required": true },
+        { "name": "Project Description", "maxWords": 2000, "required": true },
+        { "name": "Business Case", "maxWords": 2000, "required": true },
+        { "name": "Innovation Description", "maxWords": 2000, "required": true },
+        { "name": "Project Deliverables", "maxWords": 1000, "required": true },
+        { "name": "Risks and Mitigation", "maxWords": 1000, "required": true },
+        { "name": "Cost Breakdown", "required": true }
+      ],
+      "costModel": "custom",
+      "customRate": 70,
+      "overheadRate": 20,
+      "notes": "Up to 70% of project costs for micro/small businesses, 60% for medium, 50% for large. Academic partners at 80% fEC."
+    },
+    {
+      "name": "Biomedical Catalyst",
+      "maxAmount": 4000000,
+      "minAmount": 150000,
+      "maxDuration": 36,
+      "eligibility": "UK-based SMEs and academics in life sciences/healthcare",
+      "sections": [
+        { "name": "Project Vision", "maxWords": 2000, "required": true },
+        { "name": "Innovation Description", "maxWords": 3000, "required": true },
+        { "name": "Market Opportunity", "maxWords": 2000, "required": true },
+        { "name": "Project Plan", "maxWords": 2000, "required": true },
+        { "name": "Team and Resources", "maxWords": 1500, "required": true },
+        { "name": "Costs and Value for Money", "required": true }
+      ],
+      "costModel": "custom",
+      "customRate": 70,
+      "overheadRate": 20
+    },
+    {
+      "name": "Knowledge Transfer Partnership",
+      "maxAmount": 300000,
+      "minAmount": 50000,
+      "maxDuration": 36,
+      "minDuration": 12,
+      "eligibility": "UK-based business partnered with a UK knowledge base (university/research org)",
+      "sections": [
+        { "name": "Business Need", "maxWords": 1500, "required": true },
+        { "name": "Knowledge Base Expertise", "maxWords": 1500, "required": true },
+        { "name": "Project Plan", "maxWords": 2000, "required": true },
+        { "name": "Associate Development", "maxWords": 1000, "required": true },
+        { "name": "Impact and Benefits", "maxWords": 1500, "required": true },
+        { "name": "Costs", "required": true }
+      ],
+      "costModel": "custom",
+      "customRate": 67,
+      "overheadRate": 0,
+      "notes": "Government contributes up to 67% of costs. Business pays remainder."
+    }
+  ],
+  "priorities": ["Net Zero", "Health and Life Sciences", "Digital Technologies", "Manufacturing", "Food and Farming", "Creative Industries"],
+  "reviewCriteria": ["Innovation", "Market opportunity", "Project plan", "Team capability", "Value for money", "Wider impacts"]
+}
