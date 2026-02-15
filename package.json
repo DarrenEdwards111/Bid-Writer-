@@ -10,7 +10,7 @@
   "dependencies": {
     "express": "^4.21.0"
   },
-  "author": "Darren Edwards",
+  "author": "Mikoshi Ltd",
   "license": "MIT",
   "private": true
 }
