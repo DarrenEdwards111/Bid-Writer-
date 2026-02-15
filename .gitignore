@@ -1,3 +1,9 @@
 node_modules/
 proposals/
 .npmrc
+.env
+secrets/
+.keys/
+*.key
+*.pem
+*.der
